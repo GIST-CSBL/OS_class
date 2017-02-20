@@ -1,0 +1,11 @@
+all: setitimer-helper squish-pty squish-unix
+
+CC = gcc
+CFLAGS = -Wall -W
+LDFLAGS = -lm
+squish-pty: squish-pty.o
+squish-unix: squish-unix.o
+setitimer-helper: setitimer-helper.o
+
+clean: 
+	rm -f *.o setitimer-helper squish-pty squish-unix
