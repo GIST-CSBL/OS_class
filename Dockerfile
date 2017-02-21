@@ -13,6 +13,7 @@ RUN apt-get install -y perl
 RUN apt-get install -y gdb
 RUN apt-get install -y vim
 RUN apt-get install -y build-essential
+RUN apt-get install -y git
 EXPOSE 22
 
 RUN mkdir /var/run/sshd
